@@ -1,9 +1,9 @@
+import GameDetails from "@/app/serverComponents/GameDetail";
+import React from "react";
 
-"use client"
-
-const page = () => {
+const page = ({ params }) => {
   return (
-    <p>I test something</p>
+    <GameDetails gameId={params.id} />
   )
 }
 

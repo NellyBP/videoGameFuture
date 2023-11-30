@@ -1,11 +1,19 @@
-"use client"
+import React, { useEffect, useState } from 'react'
+import GamesList from '../serverComponents/GamesList ';
+import SearchBar from '../clientComponents/SearchBar';
+import { Box } from '@mui/material';
 
-import React from 'react'
 
-const page = () => {
+
+const Page = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
   return (
-    <div>page test</div>
+    <Box sx={{ marginTop: 24 }}>
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <GamesList searchQuery={searchQuery} />
+    </Box>
   )
 }
 
-export default page;
+export default Page;

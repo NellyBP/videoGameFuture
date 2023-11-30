@@ -5,9 +5,7 @@ import theme from "../theme"
 
 const MyApp = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <p>Hello</p>
-    </ThemeProvider>
+    <p>Hello</p>
   );
 }
 
