@@ -1,3 +1,6 @@
+
+"use client"
+
 const page = () => {
   return (
     <p>I test something</p>

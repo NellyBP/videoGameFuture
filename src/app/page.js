@@ -1,10 +1,12 @@
+"use client"
+
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "../theme"
 
-function MyApp({ Component, pageProps }) {
+const MyApp = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <p>Hello</p>
     </ThemeProvider>
   );
 }
